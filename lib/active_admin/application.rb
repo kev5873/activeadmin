@@ -107,7 +107,8 @@ module ActiveAdmin
 
     # Active Admin makes educated guesses when displaying objects, this is
     # the list of methods it tries calling in order
-    setting :display_name_methods, [ :display_name,
+    setting :display_name_methods, [  :admin_display_title,
+                                      :display_name,
                                       :full_name,
                                       :name,
                                       :username,
